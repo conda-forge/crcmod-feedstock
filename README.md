@@ -14,14 +14,15 @@ Python module for generating objects that compute the Cyclic Redundancy Check (C
 Current build status
 ====================
 
-Linux: [![Circle CI](https://circleci.com/gh/conda-forge/crcmod-feedstock.svg?style=shield)](https://circleci.com/gh/conda-forge/crcmod-feedstock)
-OSX: [![TravisCI](https://travis-ci.org/conda-forge/crcmod-feedstock.svg?branch=master)](https://travis-ci.org/conda-forge/crcmod-feedstock)
-Windows: [![AppVeyor](https://ci.appveyor.com/api/projects/status/github/conda-forge/crcmod-feedstock?svg=True)](https://ci.appveyor.com/project/conda-forge/crcmod-feedstock/branch/master)
+All platforms:
+[![noarch](https://img.shields.io/circleci/project/github/conda-forge/crcmod-feedstock/master.svg?label=noarch)](https://circleci.com/gh/conda-forge/crcmod-feedstock)
 
 Current release info
 ====================
-Version: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/crcmod/badges/version.svg)](https://anaconda.org/conda-forge/crcmod)
-Downloads: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/crcmod/badges/downloads.svg)](https://anaconda.org/conda-forge/crcmod)
+
+| Name | Downloads | Version | Platforms |
+| --- | --- | --- | --- |
+| [![Conda Recipe](https://img.shields.io/badge/recipe-crcmod-green.svg)](https://anaconda.org/conda-forge/crcmod) | [![Conda Downloads](https://img.shields.io/conda/dn/conda-forge/crcmod.svg)](https://anaconda.org/conda-forge/crcmod) | [![Conda Version](https://img.shields.io/conda/vn/conda-forge/crcmod.svg)](https://anaconda.org/conda-forge/crcmod) | [![Conda Platforms](https://img.shields.io/conda/pn/conda-forge/crcmod.svg)](https://anaconda.org/conda-forge/crcmod) |
 
 Installing crcmod
 =================
