@@ -1,20 +1,17 @@
 {% set name = "crcmod" %}
 {% set version = "1.7" %}
-{% set file_ext = "tar.gz" %}
-{% set hash_type = "sha256" %}
-{% set hash_value = "dc7051a0db5f2bd48665a990d3ec1cc305a466a77358ca4492826f41f283601e" %}
 
 package:
     name: '{{ name|lower }}'
     version: '{{ version }}'
 
 source:
-    fn: '{{ name }}-{{ version }}.{{ file_ext }}'
-    url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.{{ file_ext }}
-    '{{ hash_type }}': '{{ hash_value }}'
+    fn: '{{ name }}-{{ version }}.tar.gz'
+    url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
+    'sha256': 'dc7051a0db5f2bd48665a990d3ec1cc305a466a77358ca4492826f41f283601e'
 
 build:
-    number: 1002
+    number: 1003
     script: 'python setup.py install'
 
 requirements:
