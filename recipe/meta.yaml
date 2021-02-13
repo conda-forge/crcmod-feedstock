@@ -2,37 +2,41 @@
 {% set version = "1.7" %}
 
 package:
-    name: '{{ name|lower }}'
-    version: '{{ version }}'
+  name: {{ name|lower }}
+  version: {{ version }}
 
 source:
-    fn: '{{ name }}-{{ version }}.tar.gz'
-    url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-    'sha256': 'dc7051a0db5f2bd48665a990d3ec1cc305a466a77358ca4492826f41f283601e'
+  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/crcmod-{{ version }}.tar.gz
+  sha256: dc7051a0db5f2bd48665a990d3ec1cc305a466a77358ca4492826f41f283601e
 
 build:
-    number: 1004
-    script: 'python setup.py install'
+  number: 1005
+  noarch: python
+  script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
-    build:
-        - python
-    run:
-        - python
+  host:
+    - pip
+    - python >=3.6
+  run:
+    - python >=3.6
 
 test:
-    imports:
-        - crcmod
+  imports:
+    - crcmod
 
 about:
-    home: http://crcmod.sourceforge.net
-    license: MIT
-    license_family: MIT
-    license_file: LICENSE
-    summary: CRC Generator
-    description: "Python module for generating objects that compute the Cyclic Redundancy Check (CRC)"
+  home: http://crcmod.sourceforge.net
+  license: MIT
+  license_family: MIT
+  license_file: LICENSE
+  summary: CRC Generator
+  description: |
+     Python module for generating objects that compute the Cyclic Redundancy
+     Check (CRC)
 
 extra:
-    recipe-maintainers:
-        - bgruening
-        - chapmanb
+  recipe-maintainers:
+    - bgruening
+    - chapmanb
+    - xylar
