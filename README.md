@@ -217,5 +217,6 @@ Feedstock Maintainers
 
 * [@bgruening](https://github.com/bgruening/)
 * [@chapmanb](https://github.com/chapmanb/)
+* [@nehaljwani](https://github.com/nehaljwani/)
 * [@xylar](https://github.com/xylar/)
 
