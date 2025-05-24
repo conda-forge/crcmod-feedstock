@@ -6,7 +6,7 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/crcmod-{{ version }}.tar.gz
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/crcmod-{{ version }}.tar.gz
   sha256: dc7051a0db5f2bd48665a990d3ec1cc305a466a77358ca4492826f41f283601e
 
 build:
